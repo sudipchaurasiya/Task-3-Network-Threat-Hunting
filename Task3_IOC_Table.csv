@@ -1,0 +1,9 @@
+Type,Indicator,First Observed (Capture Seconds),Packet Evidence,Status,Notes
+IP and Port,107.175.82.242:9000,189.451928,23091 and 24916,Confirmed observation,Served runner_ilove.exe; maliciousness not confirmed
+File,runner_ilove.exe,189.451928,23091 and 24916,Confirmed observation,PE32+ executable; do not execute
+SHA256,b789adce70c028a6d17be45ec34667aa95586350ee0c4057e75b138b1ad35061,189.451928,Recovered file and hash comparison,Confirmed file hash,Matches the recovered and local file; not a malware verdict
+Domain,holtandberyl.com,92.641104,8228 8235 8238 8345 8347,Unverified lead,HTTP requests to /prw and /crv redirected to HTTPS
+IP,35.170.55.9,92.815468,8230 8235 8238 8345 8347,Unverified lead,Resolved for holtandberyl.com; purpose not established
+Domain,vsblobprodscussu5shard51.blob.core.windows.net,182.552750,10195,Contextual observation,TLS SNI observed; could be legitimate cloud storage
+IP,195.63.128.106:443,196.974101,24963-25020,Unresolved lead,Encrypted data observed; hostname and purpose unknown
+Domain,wpad.natureforce.com,0.154605,32 and repeated responses,Likely benign or inconclusive,NXDOMAIN responses; may relate to normal proxy discovery

@@ -1,0 +1,25 @@
+Task 3 - Threat Hunting
+Static Analysis Notes
+
+File: runner_from_pcap.exe
+Format: PE32+ Windows GUI executable
+Architecture: x86-64
+Sections: 8
+File size: 1646592 bytes
+
+SHA-256:
+b789adce70c028a6d17be45ec34667aa95586350ee0c4057e75b138b1ad35061
+
+Network evidence:
+Client: 10.10.1.128
+Server: 107.175.82.242:9000
+HTTP response: 200 OK
+Downloaded path: /wilow/runner_ilove.exe
+
+Static observations:
+- Imported Windows runtime libraries and KERNEL32.dll.
+- Imported functions include CreateThread, VirtualAlloc,
+  VirtualProtect, VirtualQuery, Sleep, and WaitForSingleObject.
+- String search found VirtualAlloc.
+- These observations alone do not prove the file is malicious.
+- Executable was not run during this investigation.

@@ -1,0 +1,42 @@
+Task 3 - Threat Hunting Event Timeline
+Source: 2026-10-01-traffic-analysis-exercise.pcap
+
+1. 92.641104 seconds
+   Client 10.10.1.128 queried DNS for holtandberyl.com.
+
+2. 92.815468 seconds
+   DNS response received; address included 35.170.55.9.
+
+3. 92.949426 seconds
+   Client requested HTTP path /prw from 35.170.55.9.
+
+4. 93.024330 seconds
+   HTTP 301 redirect to https://holtandberyl.com/prw.
+
+5. 93.098277 seconds
+   TLS ClientHello used SNI holtandberyl.com.
+
+6. 94.383042 seconds
+   Client requested HTTP path /crv from 35.170.55.9.
+
+7. 94.453762 seconds
+   HTTP 301 redirect to https://holtandberyl.com/crv.
+
+8. 94.537468 seconds
+   TLS ClientHello used SNI holtandberyl.com.
+
+9. 189.451928 seconds
+   Client 10.10.1.128 requested
+   /wilow/runner_ilove.exe from 107.175.82.242:9000.
+
+10. 191.225158 seconds
+    Server returned HTTP 200 OK for the executable.
+    Content-Length: 1646592 bytes.
+
+11. File recovery and SHA-256 comparison confirmed that
+    runner_from_pcap.exe matches runner_ilove.exe.
+
+Note:
+The relationship between the holtandberyl.com activity and
+the executable download has not been established.
+The file has not been executed.
